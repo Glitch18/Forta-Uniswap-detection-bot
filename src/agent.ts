@@ -12,14 +12,14 @@ export function provideHandleTransaction(swapEvent: string): HandleTransaction {
   return async (txEvent: TransactionEvent) => {
     const findings: Finding[] = [];
 
-    // filter the transaction logs for createAgent functions from Forta contract
+    // filter the transaction logs for Swap event
     const swapEvents = txEvent.filterLog(swapEvent);
 
-    swapEvents.forEach(async (sEvent) => {
-      // Verify that the Swap happened on UniSwap
-      // by checking weather the Pool was deployed by UniSwapV3Factory
-      const result = await isUniSwapPool(sEvent.address);
-    });
+    for (const sEvent of swapEvents) {
+      if (await isUniSwapPool(sEvent.address)) {
+        console.log("In condition");
+      }
+    }
 
     return findings;
   };

@@ -29,5 +29,5 @@ Describe each of the type of alerts fired by this agent
 
 The agent behaviour can be verified with the following transactions:
 
-- (0x0753d99d5195d90991493b5596e49ba03b6defc6b5fe1881f8aa6feca875b801)[https://etherscan.io/tx/0x0753d99d5195d90991493b5596e49ba03b6defc6b5fe1881f8aa6feca875b801]
-- More examples can be found (here)[https://info.uniswap.org/#/pools].
+- [0x0753d99d5195d90991493b5596e49ba03b6defc6b5fe1881f8aa6feca875b801](https://etherscan.io/tx/0x0753d99d5195d90991493b5596e49ba03b6defc6b5fe1881f8aa6feca875b801)
+- More examples can be found [here](https://info.uniswap.org/#/pools).
